@@ -106,9 +106,9 @@ public class Song {
     public String toString() {
         try {
             if(getGenre() != null){
-                return ("Canción " + id + ": " + name + ", duración: " + duration + ", género: " + getGenre().getName() + ", from disk: "+getDisk().getName());
+                return ("Canción " + id + ": " + name + ", duración: " + duration + ", género: " + getGenre().getName() + ", del disco: "+getDisk().getName());
             }else{
-                return ("Canción " + id + ": " + name + ", duración: " + duration + ", género: NULL, del disco: "+getDisk().getName());
+                return ("Canción " + id + ": " + name + ", duración: " + duration + ", género: Desconocido, del disco: "+getDisk().getName());
             }
         } catch (SQLException ex) {
             return "Error";
